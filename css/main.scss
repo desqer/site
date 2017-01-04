@@ -1,0 +1,44 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     20px;
+
+$text-color:       #666;
+$background-color: #ffffff;
+$brand-color:      #2a7ae2;
+
+$main-color:       #B6346B;
+$main-color-light: lighten($main-color, 30%);
+$main-color-dark:  darken($main-color, 5%);
+
+
+$link-color:        #ED8B6C;
+$link-color-dark:   darken($link-color, 5%);
+
+$grey-color:       #999;
+$grey-color-light: lighten($grey-color, 26.5%);
+$grey-color-dark:  darken($grey-color, 40%);
+
+$break-responsive: 768px;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import
+    "base",
+    "utils",
+    "layout",
+    "pages",
+    "syntax-highlighting"
+;

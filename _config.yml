@@ -52,6 +52,8 @@ collections:
 gems:
     - jekyll-paginate
     - jekyll-assets
+    - jekyll-sitemap
+    - jekyll-feed
 
 exclude:
     - Gemfile

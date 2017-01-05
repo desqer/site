@@ -25,4 +25,5 @@ group :jekyll_plugins do
    gem "jekyll-assets"
    gem "autoprefixer-rails"
    gem "jekyll-paginate"
+   gem "jekyll-sitemap"
 end

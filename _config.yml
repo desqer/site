@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://desqer.com"
 timezone: America/Sao_Paulo
 locale: pt_BR
-permalink: /:categories/:title.html 
+permalink: none
 
 # Social
 

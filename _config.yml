@@ -6,7 +6,7 @@ baseurl: ""
 url: "http://desqer.com"
 timezone: America/Sao_Paulo
 locale: pt_BR
-permalink: /blog/:categories/:title.html 
+permalink: /:categories/:title.html 
 
 # Social
 
@@ -28,7 +28,6 @@ assets:
 
     assets:
         - "*.png"
-        - "bundle.css"
 
     sources:
         - _assets/css
@@ -37,8 +36,16 @@ assets:
 
 # Build settings
 markdown: kramdown
+
+# Pagination
 paginate: 12
 paginate_path: "/blog/:num/"
+
+# Collection
+collections:
+    ebooks:
+        output: true
+        permalink: /:title.html
 
 gems:
     - jekyll-paginate

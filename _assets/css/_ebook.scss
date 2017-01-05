@@ -1,0 +1,122 @@
+.ebook {
+
+    .container {
+        @extend .responsive-container;
+        margin: 0 auto;
+    }
+
+    .button {
+        border: 0;
+        color: #FFF;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 3px;
+        padding: 20px 40px;
+        background: #EB956B;
+
+        &:hover, &:active {
+            background: #CD805B;
+        }
+    }
+
+    .main {
+        color: #FFF;
+        padding: 50px 0 0;
+        background: #B22F6D;
+
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+
+            @media all and (max-width: $break-responsive) {
+                padding: 0 20px;
+                max-width: 500px;
+                text-align: center;
+                flex-direction: column;
+            }
+        }
+
+        .main-left {
+            flex: 1;
+
+            @media all and (min-width: $break-responsive) {
+                margin-right: 40px;
+            }
+
+            @media all and (max-width: $break-responsive) {
+                margin-bottom: 50px;
+            }
+
+            h1 {
+                font-size: 48px;
+                font-weight: 400;
+                letter-spacing: -2px;
+                font-family: 'Lato', sans-serif;
+
+                @media all and (max-width: $break-responsive) {
+                    font-size: 32px;
+                }
+            }
+
+            form {
+
+                input {
+                    border: 0;
+                    width: 100%;
+                    color: #666;
+                    padding: 20px;
+                    font-size: 18px;
+                    margin-top: 15px;
+                    border-radius: 3px;
+                }
+
+                .hint {
+                    color: #FF99CA;
+                    font-size: 12px;
+                    margin-top: 5px;
+                }
+
+                button {
+                    margin-top: 30px;
+
+                    @media all and (max-width: $break-responsive) {
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+
+        .main-right {
+            img {
+                max-width: 100%;
+                margin-bottom: -100px;
+            }
+        }
+    }
+
+    .quote {
+        margin-top: 150px;
+        text-align: center;
+
+        p {
+            color: #333;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+            font-family: 'Lato', sans-serif;
+
+            @media all and (max-width: $break-responsive) {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+
+        a {
+            margin-top: 50px;
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+}

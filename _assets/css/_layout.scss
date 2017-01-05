@@ -35,12 +35,16 @@
     svg {
         width: 60px;
         height: 60px;
+
+        #Combined-Shape {
+            fill: #000;
+        }
     }
 
     ul {
         list-style: none;
         margin-top: 25px;
-        
+
         li {
             padding: 0 20px;
             display: inline;

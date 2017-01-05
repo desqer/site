@@ -28,6 +28,7 @@ assets:
 
     assets:
         - "*.png"
+        - "*.svg"
 
     sources:
         - _assets/css

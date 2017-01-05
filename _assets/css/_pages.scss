@@ -255,7 +255,7 @@ section {
             padding: 30px 100px 30px 83px;
             font-size: 18px;
             font-weight: 300;
-            background: #FFF url(/assets/email.svg) no-repeat 30px center;
+            background: #FFF asset_url('email.svg') no-repeat 30px center;
             background-size: 23px;
             color: #666;
             outline: 0;

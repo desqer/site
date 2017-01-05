@@ -34,6 +34,7 @@ assets:
         - _assets/css
         - _assets/img
         - _assets/js
+        - _assets
 
 # Build settings
 markdown: kramdown

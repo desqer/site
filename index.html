@@ -185,8 +185,12 @@ layout: default
     <h2>Pronto para ganhar tempo e clientes sem gastar nada?</h2>
     <p>Não perca o lançamento, deixe seu melhor e-mail para ser avisado</p>
 
-    <form method="post">
-        <input type="text" placeholder="Digite seu e-mail">
+    <form action="http://hike.desqer.com/api/subscriptions" method="post">
+        <input type="hidden" name="data[redirect_url]" value="http://desqer.com">
+        <input type="hidden" name="data[list_id]" value="307d8df4-04df-45e1-8d51-f6f2d2cf473f">
+
+        <input type="text" name="data[email]" placeholder="Digite seu e-mail">
+
         <button type="submit">
             <svg><use xlink:href="{{ 'icons.svg' | asset_path }}#form-check"></use></svg>
         </button>

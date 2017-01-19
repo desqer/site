@@ -4,10 +4,10 @@
 
 .btn {
     height: 40px;
-    line-height: 40px;
+    line-height: 36px;
     padding: 0 36px;
-    background: $link-color;
-    color: #FFF;
+    border: 2px solid $link-color;
+    color: $link-color;
     border-radius: 3px;
     font-weight: bold;
     font-size: 14px;

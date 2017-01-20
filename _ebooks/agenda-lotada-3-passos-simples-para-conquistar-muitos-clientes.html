@@ -13,10 +13,14 @@ description: >
         <div class="main-left">
             <h1>Aprenda a atrair muitos clientes sem gastar nenhum centavo!</h1>
 
-            <form>
-                <input type="text" placeholder="Digite seu nome">
-                <input type="email" placeholder="Digite seu e-mail">
+            <form action="http://hike.desqer.com/api/subscriptions" method="post">
+                <input type="hidden" name="data[redirect_url]" value="http://desqer.com/agenda-lotada-3-passos-simples-para-conquistar-muitos-clientes.html">
+                <input type="hidden" name="data[list_id]" value="46aee9bc-1b81-47de-b10f-b67121ca3016">
+
+                <input type="text" name="data[name]" placeholder="Digite seu nome" required>
+                <input type="email" name="data[email]" placeholder="Digite seu e-mail" required>
                 <p class="hint">Você receberá um link para o download do e-book em seu e-mail</p>
+
                 <button class="button" type="submit">Baixar e-book grátis</button>
             </form>
         </div>

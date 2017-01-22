@@ -14,7 +14,7 @@ title: Blog
         </p>
 
         <a href="{{ post.url | prepend: site.baseurl }}">
-            {% img '{{ post.thumbnail }}'
+            {% img 'posts/{{ post.thumbnail }}'
                 magick:resize:'380x200^'
                 magick:crop:'380x200!+0+0'
                 magick:gravity:'center'

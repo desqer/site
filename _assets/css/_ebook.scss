@@ -119,4 +119,18 @@
             text-decoration: none;
         }
     }
+
+    a.link {
+        cursor: pointer;
+        border-bottom: 1px dotted;
+
+        &:hover {
+            text-decoration: none;
+            border: none;
+        }
+    }
+
+    ol {
+        list-style-position:inside;
+    }
 }
